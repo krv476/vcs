@@ -32,7 +32,6 @@ void mod();
 //power function
 void power();
 
-
 private:
 
 };

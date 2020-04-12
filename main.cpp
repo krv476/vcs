@@ -46,9 +46,11 @@ int main()
 				fileName += ".txt";
 				output.open(fileName.c_str());
 				cout << "Write what you would like on the file: ";
+				cin.ignore();
 				getline(cin, content);
 				output << content;
 				output.close();	
+				cout << endl;
 				break;
 			case 'g':
 			case 'G':
