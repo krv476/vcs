@@ -1,0 +1,17 @@
+DESCRIPTION
+
+Kaden Vanjoff
+200 411 980
+
+This is a simple terminal that can execute linux commands, has a simple game, calculator and a bit more.
+
+To run:
+	Simply compile in linux and you will be good to go!
+
+Challenges:
+	The linux commands took me a while to do. I was trying to do them on windows till I remembered that it is not possible to execute
+	them on windows. It did not take me long to figure it out after.
+	The terminal also wanted to never exit and I could not figure out why, it was a simple error that I overlooked.
+
+Relation to OS:
+	Every operating system has some kind of terminal or command line that comes with it.

@@ -27,8 +27,9 @@ int main()
 	printWelcome();
 	char input;
 	Calc calculator;
-	string t[8];
+	string t[8], fileName, content;
 	int count;
+	ofstream output;
 
 	do
 	{
@@ -36,6 +37,19 @@ int main()
 		cin >> input;
 		switch(input)
 		{
+			default:
+				cout << "Invalid command! Enter 'H' for help \n";
+			case 't':
+			case 'T':
+				cout << "What would you like to name the file: ";
+				cin >> fileName;
+				fileName += ".txt";
+				output.open(fileName.c_str());
+				cout << "Write what you would like on the file: ";
+				getline(cin, content);
+				output << content;
+				output.close();	
+				break;
 			case 'g':
 			case 'G':
 				guessingGame();
@@ -82,10 +96,8 @@ int main()
 				break;
 			case 'h':
 			case 'H':
-				cout << "Available Commands: Quit(Q), Calculator(C), linux commands(L), Help(H), Guessing game(G) ...\n";				//add available commands
+				cout << "Available Commands: Quit(Q), Calculator(C), linux commands(L), Help(H), Guessing game(G), Create a text file(T) ...\n";
 				break;
-			default:
-				cout << "Invalid command! Enter 'H' for help \n";
 			case 'q':
 			case 'Q':
 				cout << "Exiting terminal...\n";
